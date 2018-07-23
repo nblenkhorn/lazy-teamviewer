@@ -1,0 +1,14 @@
+caffeinate -u -t 1
+
+osascript <<EOF
+tell application "System Events"
+keystroke "your-username-here"
+keystroke return
+delay 0.5
+keystroke "your-password-here"
+delay 0.5
+keystroke return
+end tell
+EOF
+
+osascript -e 'tell application "TeamViewer" to activate' && screencapture -R 735,175,1090,810 ~/Dropbox/_tmp_/teamviewer.png

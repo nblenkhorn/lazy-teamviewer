@@ -1,0 +1,2 @@
+osascript -e 'tell application "TeamViewer" to quit'
+pmset displaysleepnow
